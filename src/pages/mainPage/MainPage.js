@@ -7,7 +7,7 @@ const MainPage = () => {
 
     const send = (values) => {
         setUsers([...users, values]);
-        reset();  // Очищаем поля после добавления
+        reset();
     };
 
     const handleDelete = (index) => {
