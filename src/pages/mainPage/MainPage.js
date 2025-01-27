@@ -24,19 +24,19 @@ const MainPage = () => {
             <form onSubmit={handleSubmit(send)}>
                 <div>
                     <input placeholder={'name'} {...register('name', { required: true })} />
-                    {errors.name && <span>Это поле обязательно</span>}
+                    {errors.name && <span style={{color: "red"}}>Это поле обязательно</span>}
                 </div>
                 <div>
                     <input placeholder={'username'} {...register('username', { required: true })} />
-                    {errors.username && <span>Это поле обязательно</span>}
+                    {errors.username && <span style={{color: "red"}}>Это поле обязательно</span>}
                 </div>
                 <div>
                     <input placeholder={'email'} {...register('email', { required: true })} />
-                    {errors.email && <span>Это поле обязательно</span>}
+                    {errors.email && <span style={{color: "red"}}>Это поле обязательно</span>}
                 </div>
                 <div>
                     <input placeholder={'phone'} {...register('phone', { required: true })} />
-                    {errors.phone && <span>Это поле обязательно</span>}
+                    {errors.phone && <span style={{color: "red"}}>Это поле обязательно</span>}
                 </div>
                 <div>
                     <input placeholder={'website'} {...register('website')} />
